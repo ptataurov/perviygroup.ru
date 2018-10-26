@@ -1,0 +1,29 @@
+@import "../../scss/all";
+
+.content {
+  background-color: #1a1a1a;
+  padding: 16px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.content__subtitle {
+  text-align: center;
+}
+
+.content__para {
+  color: #827a5a;
+}
+
+.content__list {
+  margin-left: 32px;
+  list-style: disc;
+  color: #827a5a;
+}
+
+.content__img {
+  width: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}

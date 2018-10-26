@@ -1,0 +1,18 @@
+<svg id="icon_ytb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.147" y1="0.185" x2="0.868" y2="0.85" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fcec94"/>
+      <stop offset="0.169" stop-color="#f0c46c"/>
+      <stop offset="0.502" stop-color="#fffabd"/>
+      <stop offset="0.82" stop-color="#f0c46c"/>
+      <stop offset="1" stop-color="#fce79a"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_43" data-name="Path 43" class="cls-1" d="M16,32A15.995,15.995,0,0,1,4.687,4.687,16,16,0,1,1,22.227,30.743,15.9,15.9,0,0,1,16,32Zm.431-21.725c-1.912,0-4.508.024-5.532.092-.975.056-1.452.205-1.892.982-.475.818-.686,2.206-.686,4.5v.006c0,2.266.218,3.693.686,4.492.438.773.917.925,1.891.991,1.011.059,3.55.09,5.533.09s4.51-.031,5.53-.089c.977-.066,1.455-.218,1.889-.99.476-.806.688-2.19.688-4.49v0c0-2.3-.212-3.689-.688-4.5-.438-.777-.915-.926-1.89-.98-1.019-.068-3.615-.094-5.529-.094ZM14.4,18.892h0V12.809l5.069,3.042L14.4,18.891Z" transform="translate(0 0)"/>
+</svg>

@@ -1,0 +1,141 @@
+@import "../../../scss/all";
+
+.callback {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+.callback__name {
+  margin-bottom: 24px;
+
+  @include mq-lg-to-xl {
+    margin-bottom: 16px;
+  }
+}
+
+.callback__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 340px;
+
+  @include mq-less-sm {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.callback__input {
+  color: $color-base;
+  background-color: #000000;
+  border: 2px solid #645f4a;
+  border-radius: 8px;
+  padding: 16px;
+  @include font-size;
+  margin-bottom: 16px;
+
+  @include mq-lg-to-xl {
+    padding: 8px;
+  }
+
+  &--active {
+    border: 2px solid #f4e3a3;
+  }
+
+  &--error {
+    border: 2px solid #7b2929;
+  }
+
+  &::placeholder {
+    color: #4d4d4d;
+  }
+}
+
+.callback__check {
+  position: relative;
+  padding-left: 48px;
+}
+
+.callback__checkbox {
+  height: 24px;
+  width: 24px;
+  background-color: #000000;
+  border: 2px solid #645f4a;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--error {
+    border: 2px solid #7b2929;
+  }
+}
+
+.callback__checkbox-checked {
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.callback__link {
+  text-decoration: underline;
+}
+
+.callback__submit {
+  text-transform: uppercase;
+  @include font-size;
+  border: none;
+  max-width: 60%;
+  border-radius: 6px;
+  @include margin-auto;
+  padding: 16px 32px;
+  margin-top: 24px;
+  background: linear-gradient(0.40turn, #fcec94, #f2ca72, #fef8bb, #f2cb77, #fcec94);
+  cursor: pointer;
+  transition: opacity 300ms;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include mq-lg-to-xl {
+    margin-top: 16px;
+  }
+}
+
+.callback__success {
+  margin-top: 24px;
+  display: none;
+  text-align: center;
+  align-items: center;
+  opacity: 0;
+
+  @include mq-lg-to-xl {
+    margin-top: 16px;
+  }
+
+  &--show {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+.callback__success-icon {
+  flex-basis: 70px;
+  height: auto;
+}
+
+.callback__success-text {
+  flex: 1;
+}

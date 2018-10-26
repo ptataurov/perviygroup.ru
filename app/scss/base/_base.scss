@@ -1,0 +1,97 @@
+@import "normalize";
+@import "typography";
+
+* {
+  box-sizing: border-box;
+  font-weight: 400;
+  outline: none;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  line-height: 1.5;
+  min-width: 320px;
+  background: #000;
+  color: $color-base;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-wrap {
+  max-width: 1800px;
+  @include margin-auto;
+  width: 100%;
+  margin-top: 32px;
+  padding: 0 64px;
+
+  @include mq-less-xl {
+    padding: 0 40px;
+  }
+
+  @include mq-less-md {
+    padding: 0 8px;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+.fixed {
+
+  @include mq-less-sm {
+    overflow-y: hidden;
+  }
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.secondary-text {
+  color: #827a5a;
+}
+
+.mb-8px {
+  margin-bottom: 16px;
+}
+
+.mb-16px {
+  margin-bottom: 16px;
+}
+
+.mb-32px {
+  margin-bottom: 32px;
+}
+
+.ml-32px {
+  margin-left: 32px;
+}

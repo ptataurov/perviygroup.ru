@@ -1,0 +1,79 @@
+@import "../../scss/all";
+
+.footer {
+  margin-top: auto;
+
+  .footer__social {
+    padding: 0;
+  }
+}
+
+.footer__bg {
+  background-color: #1a1a1a;
+}
+
+.footer__wrap {
+  max-width: 1800px;
+  @include margin-auto;
+  padding: 24px 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include mq-less-xl {
+    padding: 24px 48px;
+  }
+
+  @include mq-less-md {
+    padding: 24px 16px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.footer__contacts {
+
+  @include mq-less-md {
+    margin-bottom: 24px;
+  }
+}
+
+.footer__contacts-item {
+  transition: opacity 300ms;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer__base {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #827a5a;
+
+  @include mq-less-md {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.footer__base-copyright {
+
+  @include mq-less-md {
+    order: 2;
+  }
+}
+
+.footer__base-link {
+
+  @include mq-less-md {
+    order: 1;
+    margin-bottom: 8px;
+  }
+}

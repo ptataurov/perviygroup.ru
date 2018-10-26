@@ -1,0 +1,24 @@
+@import "../../scss/all";
+
+.all-news {
+  height: 100%;
+  background-color: #1a1a1a;
+}
+
+.all-news-link {
+  height: 100%;
+  @include font-size;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.all-news-icon {
+  margin-bottom: 16px;
+}

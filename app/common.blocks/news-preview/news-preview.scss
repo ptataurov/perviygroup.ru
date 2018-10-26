@@ -1,0 +1,29 @@
+.news-preview {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.news-preview__wrap {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 500ms;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.news-preview__para {
+
+}
+
+.news-preview__date {
+  color: #827a5a;
+}

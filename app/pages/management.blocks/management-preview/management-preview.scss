@@ -1,0 +1,23 @@
+.management-preview {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.management-preview__wrap {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 300ms;
+
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.management-preview__position {
+  margin-bottom: auto !important;
+}

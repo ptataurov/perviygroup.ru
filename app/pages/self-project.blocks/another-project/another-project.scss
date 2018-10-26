@@ -1,0 +1,27 @@
+.another-project {
+
+}
+
+.another-project__self {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.another-project__name {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.another-project__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

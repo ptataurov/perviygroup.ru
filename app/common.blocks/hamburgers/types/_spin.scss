@@ -1,0 +1,51 @@
+@if index($hamburger-types, spin) {
+  /*
+   * Spin
+   */
+  .hamburger--spin {
+    .hamburger-inner {
+      transition-duration: 0.22s;
+      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      box-shadow: 2px 3px 2px rgba(0,0,0,.5);
+
+      &::before {
+        transition: top 0.1s 0.25s ease-in,
+                    opacity 0.1s ease-in,
+                    box-shadow 0.1s 0.25s;
+        box-shadow: 2px 3px 2px rgba(0,0,0,.5);
+      }
+
+      &::after {
+        transition: bottom 0.1s 0.25s ease-in,
+                    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19),
+                    box-shadow 0.1s 0.25s;
+        box-shadow: 2px 3px 2px rgba(0,0,0,.5);
+      }
+    }
+
+    &.is-active {
+      .hamburger-inner {
+        transform: rotate(225deg);
+        transition-delay: 0.12s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        box-shadow: none;
+
+        &::before {
+          top: 0;
+          opacity: 0;
+          transition: top 0.1s ease-out,
+                      opacity 0.1s 0.12s ease-out;
+          box-shadow: none;
+        }
+
+        &::after {
+          bottom: 0;
+          transform: rotate(-90deg);
+          transition: bottom 0.1s ease-out,
+                      transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

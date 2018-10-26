@@ -1,0 +1,27 @@
+@import "../../../scss/all";
+
+.debt {
+
+}
+
+.debt__wrap.row {
+  background-color: #1a1a1a;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  padding: 16px 0;
+
+  @include mq-less-sm {
+    .col-sm-6:first-of-type {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.debt__name {
+  margin-bottom: 16px;
+}
+
+.debt__icon {
+  margin-bottom: 16px;
+}

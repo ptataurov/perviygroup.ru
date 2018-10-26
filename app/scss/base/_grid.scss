@@ -1,0 +1,43 @@
+.row {
+  margin-bottom: 16px;
+}
+
+.col-x {
+  height: calc(100vw/5.50);
+
+  @include mq-less-lg {
+    height: 300px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @include mq-less-sm {
+    height: inherit;
+    min-height: 220px !important;
+  }
+}
+
+.col-2x {
+  height: calc(100vw/2.75);
+
+  @include mq-less-lg {
+    height: 600px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @include mq-less-sm {
+    height: inherit;
+    min-height: 440px !important;
+  }
+}
+
+.bg {
+  background: rgba(102, 168, 255, 1);
+  height: 100%;
+  padding: 16px;
+}

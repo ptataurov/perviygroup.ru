@@ -1,0 +1,46 @@
+@import "../../../scss/all";
+
+.production {
+
+}
+
+.production__wrap.row {
+  background-color: #1a1a1a;
+  padding: 24px 0;
+  justify-content: center;
+  margin: 0;
+}
+
+.production__img {
+  width: 250px;
+  height: 214px;
+}
+
+.production__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+
+  @include mq-less-sm {
+    margin-bottom: 24px;
+  }
+}
+
+.production__name, .production__img, .production__price {
+  flex-basis: 33.333333%;
+  display: flex;
+  align-items: center;
+}
+
+.production__price {
+
+  @include mq-less-sm {
+    padding-top: 8px;
+  }
+}
+
+.production__name {
+  padding-bottom: 16px;
+}

@@ -1,0 +1,53 @@
+//@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,600,700&subset=cyrillic');
+
+html {
+  font-size: 20px;
+
+  @include mq-less-xl {
+    font-size: 18px;
+  }
+
+  @include mq-less-lg {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+h1 {
+  text-align: center;
+  @include font-size(1.75);
+  @include margin(1.75)
+}
+
+h2 {
+  text-align: center;
+  @include font-size(1.5);
+  @include margin(1.5)
+}
+
+h3 {
+  margin: 0;
+  @include font-size(1.25);
+}
+
+h4 {
+  margin: 0;
+  @include font-size;
+}
+
+p {
+  margin: 0;
+  @include font-size;
+}
+
+.small-text {
+  margin: 0;
+  @include font-size(0.75);
+}
+
+.super-small-text {
+  @include font-size(0.65);
+}

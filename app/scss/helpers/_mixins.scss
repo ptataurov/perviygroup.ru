@@ -1,0 +1,114 @@
+// desktop first
+@mixin mq-less-xl {
+  @media (max-width: $media-xl) {
+    @content;
+  }
+}
+
+@mixin mq-less-lg {
+  @media (max-width: $media-lg) {
+    @content;
+  }
+}
+
+@mixin mq-less-md {
+  @media (max-width: $media-md) {
+    @content;
+  }
+}
+
+@mixin mq-less-sm {
+  @media (max-width: $media-sm) {
+    @content;
+  }
+}
+
+@mixin mq-more-sm {
+  @media (min-width: $media-sm) {
+    @content;
+  }
+}
+
+// mobile first
+@mixin mq-more-xl {
+  @media (min-width: $media-xl) {
+    @content;
+  }
+}
+
+@mixin mq-more-lg {
+  @media (min-width: $media-lg) {
+    @content;
+  }
+}
+
+@mixin mq-more-md {
+  @media (min-width: $media-md) {
+    @content;
+  }
+}
+
+@mixin mq-more-sm {
+  @media (min-width: $media-sm) {
+    @content;
+  }
+}
+
+@mixin mq-less-sm {
+  @media (max-width: $media-sm) {
+    @content;
+  }
+}
+
+@mixin mq-lg-to-xl {
+  @media (min-width: $media-lg) and (max-width: $media-xl) {
+    @content;
+  }
+}
+
+@mixin margin-auto() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin font-size($multiplier: 1) {
+  font-size: $font-size-base * $multiplier;
+
+  @include mq-less-xl {
+    font-size: $font-size-base * $multiplier;
+  }
+
+  @include mq-less-lg {
+    font-size: $font-size-base * $multiplier;
+  }
+}
+
+@mixin padding($multiplier: 1) {
+  padding-top: ($font-size-base * $multiplier) / 2;
+  padding-bottom: ($font-size-base * $multiplier) / 2;
+
+  @include mq-more-xl {
+    padding-top: ($font-size-base * $multiplier) / 2;
+    padding-bottom: ($font-size-base * $multiplier) / 2;
+  }
+
+  @include mq-more-lg {
+    padding-top: ($font-size-base * $multiplier) / 2;
+    padding-bottom: ($font-size-base * $multiplier) / 2;
+  }
+}
+
+@mixin margin($multiplier: 1) {
+  margin-top: ($font-size-base * $multiplier) / 2;
+  margin-bottom: ($font-size-base * $multiplier) / 2;
+
+  @include mq-more-xl {
+    margin-top: ($font-size-base * $multiplier) / 2;
+    margin-bottom: ($font-size-base * $multiplier) / 2;
+  }
+
+  @include mq-more-lg {
+    margin-top: ($font-size-base * $multiplier) / 2;
+    margin-bottom: ($font-size-base * $multiplier) / 2;
+  }
+}

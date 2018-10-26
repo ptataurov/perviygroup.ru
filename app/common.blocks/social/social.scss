@@ -1,0 +1,18 @@
+.social {
+  padding: 24px;
+  display: flex;
+}
+
+.social__link {
+  display: inline-flex;
+  transition: opacity 300ms;
+
+  &:not(:last-of-type) {
+    margin-right: 16px;
+  }
+
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

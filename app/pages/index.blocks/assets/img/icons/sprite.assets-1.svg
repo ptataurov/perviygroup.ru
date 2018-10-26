@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.147" y1="0.185" x2="0.868" y2="0.85" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fcec94"/>
+      <stop offset="0.169" stop-color="#f0c46c"/>
+      <stop offset="0.502" stop-color="#fffabd"/>
+      <stop offset="0.82" stop-color="#f0c46c"/>
+      <stop offset="1" stop-color="#fce79a"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_1330" data-name="Path 1330" class="cls-1" d="M40,0A40.01,40.01,0,0,1,55.57,76.856,40.038,40.038,0,0,1,3.144,55.566,39.988,39.988,0,0,1,40,0h0ZM28.938,58.175h29.42V35.96h-1.8v-3.6h-1.8v-4.2H53.7l-1.052-6.422L51.6,28.155h-1.05v4.2h-1.8v3.6h-1.8v9.606h-1.8V26.357h-2.4v-4.2h-3.6v-1.2h-4.2v1.2h-3.6v4.2h-2.4v19.21h-1.5l-4.5,4.385v8.223h6Zm20.413-2.4h.6V38.363h-.6Zm5.4,0h.6V38.363h-.6Zm-2.7,0h.6V38.363h-.6Zm-12.908,1.8V52.833a.756.756,0,0,0-.841-.662h-2.58a.739.739,0,0,0-.781.662v4.743h4.2Zm.6-8.4h3v-3h-3Zm0-4.2h3v-3h-3Zm0-4.2h3v-3h-3Zm0-4.2h3v-3h-3Zm0-4.2h3v-3h-3Zm-8.405,0h3v-3h-3Zm0,16.81h3v-3h-3Zm0-4.2h3v-3h-3Zm0-4.2h3v-3h-3Zm0-4.2h3v-3h-3Zm4.2,12.606h3v-3h-3Zm0-4.2h3v-3h-3Zm0-4.2h3v-3h-3Zm0-4.2h3v-3h-3Zm0-4.2h3v-3h-3Zm4.458,44A36.362,36.362,0,1,0,3.634,40,36.406,36.406,0,0,0,40,76.361Z"/>
+</svg>

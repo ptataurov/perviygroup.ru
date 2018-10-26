@@ -1,0 +1,24 @@
+.child-company__self {
+  height: 100%;
+  background-color: #1a1a1a;
+}
+
+.child-company__self-link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.child-company__self-icon {
+  margin-bottom: 16px;
+}
+
+

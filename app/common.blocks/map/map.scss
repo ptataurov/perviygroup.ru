@@ -1,0 +1,35 @@
+@import "../../scss/all";
+
+.map__container {
+  background-image: url("/img/map.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+
+  @include mq-less-lg {
+    background: none;
+  }
+}
+
+.map__address-list {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 50%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4% 0;
+
+  @include mq-less-lg {
+    width: 100%;
+  }
+}
+
+.map__address-item {
+  text-align: center;
+}
+
+.map__address-city {
+  margin-bottom: 8px;
+}

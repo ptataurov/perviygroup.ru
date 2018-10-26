@@ -1,0 +1,138 @@
+@import "../../scss/all";
+
+.menu {
+  position: fixed;
+  min-width: 320px;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.22s 0.12s ease-out;
+
+  &--scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.menu__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1800px;
+  @include margin-auto;
+  padding: 0 72px;
+
+  @include mq-less-lg {
+    padding: 0;
+  }
+
+}
+
+.menu__logo {
+  margin: 16px 0;
+
+  @include mq-less-lg {
+    margin: 16px 40px;
+  }
+
+  @include mq-less-sm {
+    margin: 16px;
+    width: 180px;
+    height: 43.36px;
+  }
+}
+
+.menu__container {
+  flex-basis: 100%;
+  display: none;
+}
+
+.menu__container-line {
+  border-bottom: 2px solid #f4e3a3;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.22s 0.12s ease-out;
+
+  &--visible {
+    opacity: 1;
+  }
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+
+  @include mq-less-lg {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+  }
+}
+
+.menu__item {
+  text-transform: uppercase;
+  @include font-size(0.75);
+  transition: opacity 300ms;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @include mq-less-lg {
+
+    &:not(:last-of-type) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @include mq-less-md {
+
+    &:not(:last-of-type) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.menu__contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  @include font-size(0.75);
+
+  @include mq-less-md {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+  }
+}
+
+.menu__link-mail {
+  transition: opacity 300ms;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @include mq-less-md {
+    order: 2;
+    margin-bottom: 24px;
+  }
+}
+
+.menu__link-phone {
+  transition: opacity 300ms;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @include mq-less-md {
+    order: 3;
+  }
+}

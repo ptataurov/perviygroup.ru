@@ -1,0 +1,49 @@
+@import "../../scss/all";
+
+.arrow {
+  height: 64px;
+  width: 64px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  @include mq-less-md {
+    height: 48px;
+    width: 48px;
+  }
+
+  @include mq-less-sm {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.arrow__icon-left, .arrow__icon-right {
+
+  @include mq-less-md {
+    height: 18.72px;
+    width: 11px;
+  }
+
+  @include mq-less-sm {
+    height: 7px;
+    width: 11.92px;
+  }
+
+}
+
+.arrow__icon-left {
+  transform: scale(-1, -1) translateX(12%);
+}
+
+.arrow__icon-right {
+  transform: translateX(12%);
+}

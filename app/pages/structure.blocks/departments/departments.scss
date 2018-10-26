@@ -1,0 +1,28 @@
+.departments {
+
+}
+
+.departments__self {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.departments__name {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.departments__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

@@ -1,0 +1,15 @@
+.about {
+  background-color: #1a1a1a;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.about__para {
+
+  &:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+}
